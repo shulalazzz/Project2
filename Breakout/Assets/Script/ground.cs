@@ -17,6 +17,6 @@ public class ground : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        game_manage.instance.Reset_ball();
+        game_manage.instance.game_over();
     }
 }
