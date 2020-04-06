@@ -2497,7 +2497,7 @@ GameObject:
   - component: {fileID: 1044151411}
   - component: {fileID: 1044151412}
   m_Layer: 0
-  m_Name: ball_1
+  m_Name: ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4058,7 +4058,7 @@ GameObject:
   - component: {fileID: 1805876210}
   - component: {fileID: 1805876213}
   m_Layer: 0
-  m_Name: paddle_1
+  m_Name: paddle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
