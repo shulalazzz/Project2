@@ -44,6 +44,7 @@ public class ball : MonoBehaviour
             game_manage.instance.isPlaying = true;
             game_manage.instance.start_panel.SetActive(false);
             Vector3 speed_normalized =  new Vector3(1f, 1f, 0).normalized;
+            Debug.Log("release ball1");
             rb_ball.velocity = speed_normalized * speed;
         }
         if (game_manage.instance.isPlaying == false && !game_manage.instance.is_passed)
