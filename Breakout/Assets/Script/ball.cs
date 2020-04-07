@@ -18,6 +18,14 @@ public class ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!game_manage.instance.isPlaying && game_manage.instance.is_passed) {
+            radius = gameObject.GetComponent<SphereCollider>().radius;
+            Vector3 pos = transform.position;
+            pos.x = paddle.transform.position.x;
+            pos.y = paddle.transform.position.y + radius;
+            transform.position = pos;
+            return;
+        }
         if (Input.GetKeyDown(KeyCode.Z))
         {
             if (hacking)
