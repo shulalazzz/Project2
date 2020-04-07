@@ -10,6 +10,9 @@ public class paddle_moving : MonoBehaviour
     
     void Update()
     {
+        if (game_manage.instance.is_passed) {
+            return;
+        }
         float x_direction = Input.GetAxisRaw("Horizontal");
         if(x_direction != 0)
         {
