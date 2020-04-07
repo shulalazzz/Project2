@@ -52,6 +52,11 @@ public class game_manage : MonoBehaviour
     
     void Update()
     {
-        
+        if (Input.GetKeyDown (KeyCode.Q)) {
+            SceneManager.LoadScene ("menu");
+        }
+        if (Input.GetKeyDown (KeyCode.R)) {
+            SceneManager.LoadScene ("single_mode");
+        }
     }
 }
