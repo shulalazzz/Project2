@@ -2095,7 +2095,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Player2 win!
+  m_Text: Topper player win!
 --- !u!222 &584622821
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5397,7 +5397,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Player1 win!
+  m_Text: Bottom player win!
 --- !u!222 &2054773779
 CanvasRenderer:
   m_ObjectHideFlags: 0
