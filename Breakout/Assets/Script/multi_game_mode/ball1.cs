@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ball1 : MonoBehaviour
 {
-    public Rigidbody rb_ball1;
+    private Rigidbody rb_ball1;
     private float radius;
     public float speed;
     public Transform paddle1;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ball2 : MonoBehaviour
 {
-    public Rigidbody rb_ball2;
+    private Rigidbody rb_ball2;
     private float radius;
     public float speed;
     public Transform paddle2;
