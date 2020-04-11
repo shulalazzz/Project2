@@ -10,9 +10,10 @@ public class ball : MonoBehaviour
     public float speed;
     public Transform paddle;
     private bool hacking = false;
-    void Start()
+    void Awake()
     {
         rb_ball = GetComponent<Rigidbody>();
+        paddle = GameObject.FindObjectOfType<paddle_moving>().transform;
     }
 
     // Update is called once per frame
@@ -51,9 +52,7 @@ public class ball : MonoBehaviour
         {
             game_manage.instance.isPlaying = true;
             game_manage.instance.start_panel.SetActive(false);
-            Vector3 speed_normalized =  new Vector3(1f, 1f, 0).normalized;
-            Debug.Log("release ball1");
-            rb_ball.velocity = speed_normalized * speed;
+            StartMove();
         }
         if (game_manage.instance.isPlaying == false && !game_manage.instance.is_passed)
         {
@@ -71,7 +70,6 @@ public class ball : MonoBehaviour
         {
             Vector3 sp = rb_ball.velocity.normalized;
             float angle = Mathf.Asin(sp.y / 1) * Mathf.Rad2Deg;
-            Debug.Log("angle is " + angle);
             if((0 <= angle && angle <=10) || (-10 <= angle && angle <= 0) || (80 <= angle && angle <= 90) || (-90 <= angle && angle <= -80))
             {
                 Vector3 speed_normalized = new Vector3(1f, 1f, 0).normalized;
@@ -79,5 +77,17 @@ public class ball : MonoBehaviour
                 Debug.Log("angle changed");
             }
         }
+    }
+    int RandomAngle()
+    {
+        int angle = Random.Range(10, 170);
+        return angle;
+    }
+    public void StartMove()
+    {
+        int angle = RandomAngle();
+        Vector3 speed_normalized = new Vector3(1f, Mathf.Tan(angle * Mathf.Deg2Rad), 0).normalized;
+        Debug.Log("release ball1");
+        rb_ball.velocity = speed_normalized * speed;
     }
 }

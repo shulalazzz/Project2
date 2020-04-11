@@ -17,6 +17,13 @@ public class ground : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        game_manage.instance.game_over();
+        if (game_manage.instance.IsLastBall())
+        {
+            game_manage.instance.GameOver();
+        }
+        else
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }

@@ -17,8 +17,19 @@ public class game_manage : MonoBehaviour
     {
         instance = this;
     }
-
-    public void game_over()
+    public bool IsLastBall()
+    {
+        ball[] all_ball = GameObject.FindObjectsOfType<ball>();
+        if(all_ball.Length == 1)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public void GameOver()
     {
         if (life_num == 0)
         {
@@ -32,11 +43,16 @@ public class game_manage : MonoBehaviour
         }
         
     }
+    public void ChangeLife(int num)
+    {
+        life_num += num;
+        life_text.text = "Lives:" + life_num;
 
-    public void check_win()
+    }
+
+    public void CheckWin()
     {
         break_brick[] all_break = GameObject.FindObjectsOfType<break_brick>();
-        Debug.Log("brick number is"+all_break.Length);
         if (all_break.Length == 1)
         {
             is_passed = true;

@@ -18,8 +18,8 @@ public class break_brick : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         this.enabled = false;
-        game_manage.instance.check_win();
-        //Debug.Log(this.name);
+        game_manage.instance.CheckWin();
+        Debug.Log("Destroying " + gameObject.name);
         Destroy(gameObject);
     }
 }
