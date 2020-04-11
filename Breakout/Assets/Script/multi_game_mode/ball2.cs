@@ -66,4 +66,17 @@ public class ball2 : MonoBehaviour
             transform.position = pos;
         }
     }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (game_manage.instance.isPlaying)
+        {
+            Vector3 sp = rb_ball2.velocity.normalized;
+            float angle = Mathf.Asin(sp.y / 1) * Mathf.Rad2Deg;
+            if ((0 <= angle && angle <= 10) || (-10 <= angle && angle <= 0) || (80 <= angle && angle <= 90) || (-90 <= angle && angle <= -80))
+            {
+                Vector3 speed_normalized = new Vector3(1f, 1f, 0).normalized;
+                rb_ball2.velocity = speed_normalized * speed;
+            }
+        }
+    }
 }

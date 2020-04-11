@@ -31,7 +31,7 @@ public class multi_game_manage_player1 : MonoBehaviour
         {
             isPlaying = false;
             life_num -= 1;
-            life_text.text = "Bottom player lives: " + life_num;
+            life_text.text = "lives: " + life_num;
         }
     }
 
