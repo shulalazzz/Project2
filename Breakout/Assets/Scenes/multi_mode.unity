@@ -2761,8 +2761,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.41335708, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 43, y: 0}
-  m_SizeDelta: {x: 74, y: 30}
+  m_AnchoredPosition: {x: 65, y: -60}
+  m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &970363138
 MonoBehaviour:
@@ -2783,9 +2783,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 6d0f789ea60ae3941aec1a20a35c13aa, type: 3}
     m_FontSize: 33
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
@@ -2795,7 +2795,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Right click to start
+  m_Text: Left  click  to  start
 --- !u!222 &970363139
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2838,7 +2838,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1, y: -34}
+  m_AnchoredPosition: {x: 0, y: -43.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1005093753
@@ -2860,11 +2860,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
-    m_FontStyle: 1
+    m_Font: {fileID: 12800000, guid: de1890526faf27c4c894e732568638f6, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2872,11 +2872,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '
+  m_Text: 'Press q to quit this mode
 
-    Press q to quit this mode.
-
-    Press r to restart this mode.'
+    Press r to restart this mode'
 --- !u!222 &1005093754
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3567,7 +3565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8330fdcb0384b458af5aefdbd38c7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 13
   x_min: -11.3
   x_max: 11.3
 --- !u!65 &1127043720
@@ -4503,7 +4501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cce6a6e2ddbbecd47af8d9fc2c06f3cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 13
   x_min: -11.3
   x_max: 11.3
 --- !u!65 &1608554592
