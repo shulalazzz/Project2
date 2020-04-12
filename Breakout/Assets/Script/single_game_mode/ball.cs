@@ -8,12 +8,14 @@ public class ball : MonoBehaviour
     private Rigidbody rb_ball;
     private float radius;
     public float speed;
+    public bool apply_magnetic;
     public Transform paddle;
     private bool hacking = false;
     void Awake()
     {
         rb_ball = GetComponent<Rigidbody>();
         paddle = GameObject.FindObjectOfType<paddle_moving>().transform;
+        apply_magnetic = false;
     }
 
     // Update is called once per frame
@@ -48,15 +50,25 @@ public class ball : MonoBehaviour
             pos.x = paddle.transform.position.x;
             transform.position = pos;
         }
-        if (Input.GetMouseButtonDown(0)&&!game_manage.instance.isPlaying)
+        if ((Input.GetMouseButtonDown(0)&&!game_manage.instance.isPlaying) || (Input.GetMouseButtonDown(0) && apply_magnetic))
         {
             game_manage.instance.isPlaying = true;
             game_manage.instance.start_panel.SetActive(false);
+            apply_magnetic = false;
             StartMove();
         }
+        //not start, ball follow paddle
         if (game_manage.instance.isPlaying == false && !game_manage.instance.is_passed)
         {
             game_manage.instance.start_panel.SetActive(true);
+            radius = gameObject.GetComponent<SphereCollider>().radius;
+            Vector3 pos = transform.position;
+            pos.x = paddle.transform.position.x;
+            pos.y = paddle.transform.position.y + radius;
+            transform.position = pos;
+        }
+        if (apply_magnetic)
+        {
             radius = gameObject.GetComponent<SphereCollider>().radius;
             Vector3 pos = transform.position;
             pos.x = paddle.transform.position.x;

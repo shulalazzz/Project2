@@ -8,7 +8,7 @@ public class item_script : MonoBehaviour
     public GameObject ball_prefab;
    public enum item_type
     {
-        life_item, multiballs_item
+        life_item, multiballs_item, magnetic_item
         
     }
     private void OnCollisionEnter(Collision collision)
@@ -28,7 +28,10 @@ public class item_script : MonoBehaviour
                 ball.GetComponent<ball>().StartMove();
             }
         }
-        Debug.Log("destorying " + transform.name);
+        else if(current_type == item_type.magnetic_item)
+        {
+            game_manage.instance.is_magnetic = true;
+        }
         Destroy(gameObject);
     }
 }

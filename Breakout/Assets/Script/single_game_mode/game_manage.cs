@@ -9,6 +9,7 @@ public class game_manage : MonoBehaviour
     public static game_manage instance;
     public bool isPlaying = false;
     public int life_num;
+    public bool is_magnetic = false;
     public Text life_text;
     public GameObject start_panel;
     public GameObject win_panel;

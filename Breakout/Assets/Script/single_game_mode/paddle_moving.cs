@@ -22,4 +22,13 @@ public class paddle_moving : MonoBehaviour
             transform.position = pos;
         }
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (game_manage.instance.is_magnetic)
+        {
+            game_manage.instance.is_magnetic = false;
+            collision.gameObject.GetComponent<ball>().apply_magnetic = true;
+
+        }
+    }
 }
