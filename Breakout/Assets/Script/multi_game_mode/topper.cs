@@ -19,7 +19,14 @@ public class topper : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.transform.tag == "Ball2") {
-            multi_game_manage_player2.instance.game_over();
+            if (multi_game_manage_player2.instance.IsLastBall())
+            {
+                multi_game_manage_player2.instance.GameOver();
+            }
+            else
+            {
+                Destroy(collision.gameObject);
+            }
         }
     }
 }

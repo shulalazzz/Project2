@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3346281884744330050}
   - component: {fileID: 3346281884744330049}
   - component: {fileID: 3346281884744330048}
-  - component: {fileID: -4860221283951176969}
   m_Layer: 0
   m_Name: multiballs_item
   m_TagString: Untagged
@@ -94,18 +93,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-4860221283951176969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3346281884744330079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3afeb9c6f441da041b45d5f8bf1f654a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  current_type: 1
-  ball_prefab: {fileID: 1554806220870993197, guid: 8b9a8078d551f0c4cbbdaa277f576072,
-    type: 3}

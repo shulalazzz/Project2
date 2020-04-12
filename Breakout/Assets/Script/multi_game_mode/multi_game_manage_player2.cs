@@ -11,19 +11,37 @@ public class multi_game_manage_player2 : MonoBehaviour
     public bool is_passed = false;
     public GameObject start_panel;
     public GameObject win_panel;
+    public GameObject draw_panel;
     public Text life_text;
     public int life_num;
+    public int score;
     public bool lose = false;
+    public bool is_magnetic = false;
+    public int rest_break;
 
     private void Awake()
     {
         instance = this;
     }
 
-    public void game_over()
+    public bool IsLastBall()
+    {
+        ball2[] all_ball = GameObject.FindObjectsOfType<ball2>();
+        if(all_ball.Length == 1)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public void GameOver()
     {
         if (life_num == 0)
         {
+            // isPlaying = false;
             lose = true;
             multi_game_manage_player1.instance.check_win();
         }
@@ -31,19 +49,57 @@ public class multi_game_manage_player2 : MonoBehaviour
         {
             isPlaying = false;
             life_num -= 1;
-            life_text.text = "lives: " + life_num;
+            life_text.text = "lives: " + life_num + "		Score: " + score;
         }
+    }
+
+    public void ChangeLife(int num)
+    {
+        life_num += num;
+        life_text.text = "lives: " + life_num + "		Score: " + score;
+    }
+
+    public void ChangeScore(int num)
+    {
+        score += num;
+        life_text.text = "lives: " + life_num + "		Score: " + score;
     }
 
     public void check_win()
     {
         break_brick_player2[] all_break = GameObject.FindObjectsOfType<break_brick_player2>();
-        Debug.Log("player2 brick number is"+all_break.Length);
-        if ((all_break.Length == 1) || multi_game_manage_player1.instance.lose)
+        rest_break = all_break.Length;
+        Debug.Log("player2 brick number is " + all_break.Length);
+        if (all_break.Length == 1)
         {
             is_passed = true;
             win_panel.SetActive(true);
             isPlaying = false;
+        }
+        else if (multi_game_manage_player1.instance.lose && (score > multi_game_manage_player1.instance.score))
+        {
+            is_passed = true;
+            win_panel.SetActive(true);
+            isPlaying = false;
+        }
+        else if (lose && multi_game_manage_player1.instance.lose)
+        {
+            if (score > multi_game_manage_player1.instance.score)
+            {
+                is_passed = true;
+                win_panel.SetActive(true);
+                isPlaying = false;
+            }
+            else if (score == multi_game_manage_player1.instance.score)
+            {
+                is_passed = true;
+                draw_panel.SetActive(true);
+                isPlaying = false;
+            }
+            else
+            {
+                multi_game_manage_player1.instance.check_win();
+            }
         }
     }
 
