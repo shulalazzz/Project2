@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 466250553288743683}
   - component: {fileID: 4474046942351068782}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: life
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,3 +108,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   current_type: 0
   ball_prefab: {fileID: 0}
+  paddle: {fileID: 0}
