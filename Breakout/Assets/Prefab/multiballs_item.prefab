@@ -107,5 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   current_type: 1
-  ball_prefab: {fileID: 0}
+  ball_prefab: {fileID: 1554806220870993197, guid: 8b9a8078d551f0c4cbbdaa277f576072,
+    type: 3}
   paddle: {fileID: 0}
+  explosion_radius: 0

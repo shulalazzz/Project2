@@ -14,6 +14,7 @@ public class game_manage : MonoBehaviour
     public GameObject start_panel;
     public GameObject win_panel;
     public bool is_passed = false;
+    public bool is_extend = false;
     private void Awake()
     {
         instance = this;

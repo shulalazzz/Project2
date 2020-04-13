@@ -41,6 +41,7 @@ public class item_script : MonoBehaviour
         else if(current_type == item_type.extend_item)
         {
             paddle = GameObject.FindObjectOfType<paddle_moving>().transform;
+            game_manage.instance.is_extend = true;
             paddle.localScale = new Vector3(4f, 0.3f, 1f);
         }
         else if (current_type == item_type.boom_item)
