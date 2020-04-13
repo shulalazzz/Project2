@@ -19,6 +19,7 @@ public class ground : MonoBehaviour
     {
         if (game_manage.instance.IsLastBall())
         {
+            game_manage.instance.is_magnetic = false;
             game_manage.instance.GameOver();
         }
         else

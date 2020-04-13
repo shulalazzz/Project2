@@ -33,10 +33,13 @@ public class paddle1_moving : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (multi_game_manage_player1.instance.is_magnetic)
+        if (collision.transform.tag == "Ball1")
         {
-            multi_game_manage_player1.instance.is_magnetic = false;
-            collision.gameObject.GetComponent<ball1>().apply_magnetic = true;
+            if (multi_game_manage_player1.instance.is_magnetic)
+            {
+                multi_game_manage_player1.instance.is_magnetic = false;
+                collision.gameObject.GetComponent<ball1>().apply_magnetic = true;
+            }
         }
     }
 }

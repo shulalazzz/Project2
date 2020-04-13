@@ -1911,7 +1911,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: multiballs_item (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3157422684163953900, guid: 8abafa7d51835454e9ac1cdcd7a5a77b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8abafa7d51835454e9ac1cdcd7a5a77b, type: 3}
 --- !u!1 &479322346 stripped
 GameObject:
@@ -5173,7 +5174,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: multiballs_item
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3157422684163953900, guid: 8abafa7d51835454e9ac1cdcd7a5a77b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8abafa7d51835454e9ac1cdcd7a5a77b, type: 3}
 --- !u!1 &1867997220
 GameObject:
