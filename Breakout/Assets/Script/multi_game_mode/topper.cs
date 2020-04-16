@@ -21,6 +21,7 @@ public class topper : MonoBehaviour
         if (collision.transform.tag == "Ball2") {
             if (multi_game_manage_player2.instance.IsLastBall())
             {
+                multi_game_manage_player2.instance.is_magnetic = false;
                 multi_game_manage_player2.instance.GameOver();
             }
             else
