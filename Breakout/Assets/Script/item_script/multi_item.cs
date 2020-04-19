@@ -7,6 +7,7 @@ public class multi_item : MonoBehaviour
     public item_type current_type;
     public GameObject ball_prefab1;
     public GameObject ball_prefab2;
+    public AudioSource ACspecial;
 
     public enum item_type
     {
@@ -18,6 +19,7 @@ public class multi_item : MonoBehaviour
         Debug.Log("Item activated "+ transform.name);
 
         if (collision.transform.tag == "Ball1") {
+          ACspecial.Play();
             if(current_type == item_type.life_item)
             {
                 multi_game_manage_player1.instance.ChangeLife(1);
@@ -38,6 +40,7 @@ public class multi_item : MonoBehaviour
         }
 
         if (collision.transform.tag == "Ball2") {
+          ACspecial.Play();
             if(current_type == item_type.life_item)
             {
                 multi_game_manage_player2.instance.ChangeLife(1);

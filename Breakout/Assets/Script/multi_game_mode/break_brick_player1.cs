@@ -6,13 +6,15 @@ public class break_brick_player1 : MonoBehaviour
 {
     void Start()
     {
-        
+
     }
 
     void Update()
     {
-        
+
     }
+
+    public AudioSource AC;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -21,6 +23,7 @@ public class break_brick_player1 : MonoBehaviour
             multi_game_manage_player1.instance.ChangeScore(1);
             multi_game_manage_player1.instance.check_win();
             Destroy(gameObject);
+            AC.Play();
         }
     }
 }

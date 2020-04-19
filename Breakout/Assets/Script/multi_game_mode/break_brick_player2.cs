@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class break_brick_player2 : MonoBehaviour
-{   
+{
     void Start()
     {
-        
+
     }
 
     void Update()
     {
-        
+
     }
+
+    public AudioSource AC;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -21,6 +23,7 @@ public class break_brick_player2 : MonoBehaviour
             multi_game_manage_player2.instance.ChangeScore(1);
             multi_game_manage_player2.instance.check_win();
             Destroy(gameObject);
+            AC.Play();
         }
     }
 }
