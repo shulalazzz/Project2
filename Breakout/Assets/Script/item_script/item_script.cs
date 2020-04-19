@@ -8,17 +8,19 @@ public class item_script : MonoBehaviour
     public GameObject ball_prefab;
     public Transform paddle;
     public float explosion_radius;
+    public AudioSource ACspecial;
    public enum item_type
     {
-        life_item, 
-        multiballs_item, 
+        life_item,
+        multiballs_item,
         magnetic_item,
         extend_item,
         boom_item
-        
+
     }
     private void OnCollisionEnter(Collision collision)
     {
+      ACspecial.Play();
         Debug.Log("Item activated "+ transform.name);
         if(current_type == item_type.life_item)
         {
