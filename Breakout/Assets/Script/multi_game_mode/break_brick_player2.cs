@@ -18,6 +18,7 @@ public class break_brick_player2 : MonoBehaviour
     {
         if (collision.transform.tag == "Ball2") {
             this.enabled = false;
+            multi_game_manage_player2.instance.ChangeScore(1);
             multi_game_manage_player2.instance.check_win();
             Destroy(gameObject);
         }

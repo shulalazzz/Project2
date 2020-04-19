@@ -10,7 +10,7 @@ public class paddle2_moving : MonoBehaviour
 
     void Update()
     {
-        if (multi_game_manage_player1.instance.is_passed || multi_game_manage_player2.instance.is_passed) {
+        if (multi_game_manage_player2.instance.is_passed || multi_game_manage_player1.instance.is_passed || multi_game_manage_player2.instance.lose) {
             return;
         }
         
@@ -28,6 +28,18 @@ public class paddle2_moving : MonoBehaviour
             Vector3 pos = transform.position;
             pos.x = Mathf.Clamp(pos.x, x_min, x_max);
             transform.position = pos;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.tag == "Ball2")
+        {
+            if (multi_game_manage_player2.instance.is_magnetic)
+            {
+                multi_game_manage_player2.instance.is_magnetic = false;
+                collision.gameObject.GetComponent<ball2>().apply_magnetic = true;
+            }
         }
     }
 }
