@@ -1,9 +1,10 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class topper : MonoBehaviour
 {
+    public GameObject GroundParticle;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,7 @@ public class topper : MonoBehaviour
             }
             else
             {
+                Instantiate(GroundParticle, gameObject.transform.position, Quaternion.identity);
                 Destroy(collision.gameObject);
             }
         }
