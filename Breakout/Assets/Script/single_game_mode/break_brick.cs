@@ -1,9 +1,11 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class break_brick : MonoBehaviour
 {
+    public GameObject ParticleBrick;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,7 @@ public class break_brick : MonoBehaviour
         AC.Play();
         game_manage.instance.CheckWin();
         Debug.Log("Destroying " + gameObject.name);
+        Instantiate(ParticleBrick, gameObject.transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }

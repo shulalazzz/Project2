@@ -1,9 +1,10 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ground : MonoBehaviour
 {
+    public GameObject GroundParticle;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +20,13 @@ public class ground : MonoBehaviour
     {
         if (game_manage.instance.IsLastBall())
         {
+            Instantiate(GroundParticle, gameObject.transform.position, Quaternion.identity);
             game_manage.instance.is_magnetic = false;
             game_manage.instance.GameOver();
         }
         else
         {
+            Instantiate(GroundParticle, gameObject.transform.position, Quaternion.identity);
             Destroy(collision.gameObject);
         }
     }
