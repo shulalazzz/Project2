@@ -49,20 +49,20 @@ public class multi_game_manage_player2 : MonoBehaviour
         {
             isPlaying = false;
             life_num -= 1;
-            life_text.text = "lives: " + life_num + "		Score: " + score;
+            life_text.text = "lives: " + life_num + "\nScore: " + score;
         }
     }
 
     public void ChangeLife(int num)
     {
         life_num += num;
-        life_text.text = "lives: " + life_num + "		Score: " + score;
+        life_text.text = "lives: " + life_num + "\nScore: " + score;
     }
 
     public void ChangeScore(int num)
     {
         score += num;
-        life_text.text = "lives: " + life_num + "		Score: " + score;
+        life_text.text = "lives: " + life_num + "\nScore: " + score;
     }
 
     public void check_win()

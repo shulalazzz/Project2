@@ -226,6 +226,12 @@ PrefabInstance:
       propertyPath: ACspecial
       value: 
       objectReference: {fileID: 996406554}
+    - target: {fileID: 3157422684163953900, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
     - target: {fileID: 3346281884744330051, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1015,6 +1021,12 @@ PrefabInstance:
       propertyPath: ACspecial
       value: 
       objectReference: {fileID: 996406554}
+    - target: {fileID: 4474046942351068782, guid: 01b6b8d87c68d194d89d57168e8dda3d,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
     - target: {fileID: 5755905570421891251, guid: 01b6b8d87c68d194d89d57168e8dda3d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1743,6 +1755,12 @@ PrefabInstance:
       propertyPath: ACspecial
       value: 
       objectReference: {fileID: 996406554}
+    - target: {fileID: 3157422684163953900, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
     - target: {fileID: 3346281884744330051, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2798,7 +2816,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632981981}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.39, y: -0.40999997, z: 0}
+  m_LocalPosition: {x: -2.97, y: -0.40999997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3530,6 +3548,12 @@ PrefabInstance:
       propertyPath: ACspecial
       value: 
       objectReference: {fileID: 996406554}
+    - target: {fileID: 1744134845467200474, guid: 2150a389866901346a92be55c552a6ea,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2150a389866901346a92be55c552a6ea, type: 3}
 --- !u!1 &857551503
@@ -3980,7 +4004,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996406553}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.39, y: -0.40999997, z: 0}
+  m_LocalPosition: {x: -3.01, y: -0.40999997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5541,6 +5565,12 @@ PrefabInstance:
       propertyPath: ACspecial
       value: 
       objectReference: {fileID: 996406554}
+    - target: {fileID: 8853671149574590588, guid: 91e492b2b17ec784f86da038d3b9f01d,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91e492b2b17ec784f86da038d3b9f01d, type: 3}
 --- !u!1 &1379603042
@@ -6287,6 +6317,12 @@ PrefabInstance:
       propertyPath: ACspecial
       value: 
       objectReference: {fileID: 996406554}
+    - target: {fileID: -3535486647033681261, guid: c99ba3f0b90f4ca47b04df3a28291db7,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
     - target: {fileID: 5818875713175245648, guid: c99ba3f0b90f4ca47b04df3a28291db7,
         type: 3}
       propertyPath: m_Name
@@ -7514,6 +7550,12 @@ PrefabInstance:
       propertyPath: ACspecial
       value: 
       objectReference: {fileID: 996406554}
+    - target: {fileID: 1744134845467200474, guid: 2150a389866901346a92be55c552a6ea,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2150a389866901346a92be55c552a6ea, type: 3}
 --- !u!1001 &2070090445
@@ -7533,6 +7575,12 @@ PrefabInstance:
       propertyPath: ACspecial
       value: 
       objectReference: {fileID: 996406554}
+    - target: {fileID: -3535486647033681261, guid: c99ba3f0b90f4ca47b04df3a28291db7,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
     - target: {fileID: 5818875713175245648, guid: c99ba3f0b90f4ca47b04df3a28291db7,
         type: 3}
       propertyPath: m_Name

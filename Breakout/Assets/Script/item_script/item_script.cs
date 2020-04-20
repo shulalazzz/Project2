@@ -8,6 +8,7 @@ public class item_script : MonoBehaviour
     public GameObject ball_prefab;
     public Transform paddle;
     public float explosion_radius;
+    public GameObject ParticleBrick;
     public AudioSource ACspecial;
    public enum item_type
     {
@@ -53,11 +54,12 @@ public class item_script : MonoBehaviour
             {
                 if(!obj.CompareTag("Player"))
                 {
+                    Instantiate(ParticleBrick, gameObject.transform.position, Quaternion.identity);
                     Destroy(obj.gameObject);
                 }
             }
         }
-
+        Instantiate(ParticleBrick, gameObject.transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }

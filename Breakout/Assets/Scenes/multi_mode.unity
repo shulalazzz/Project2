@@ -6346,6 +6346,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ball2
       objectReference: {fileID: 0}
+    - target: {fileID: 3946613534792517480, guid: 584280e17670e48859acf02a163307cb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3946613534792517481, guid: 584280e17670e48859acf02a163307cb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6479,6 +6484,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ball1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605244116492363027, guid: c0d2f3c22e8bb408ca6f653d56c315f4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0d2f3c22e8bb408ca6f653d56c315f4, type: 3}

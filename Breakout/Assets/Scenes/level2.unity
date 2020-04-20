@@ -1431,6 +1431,18 @@ PrefabInstance:
       propertyPath: ACspecial
       value: 
       objectReference: {fileID: 1698349701}
+    - target: {fileID: 4474046942351068782, guid: 01b6b8d87c68d194d89d57168e8dda3d,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
+    - target: {fileID: 4474046942351068782, guid: 01b6b8d87c68d194d89d57168e8dda3d,
+        type: 3}
+      propertyPath: ParticleItem
+      value: 
+      objectReference: {fileID: 1468240467221576396, guid: 61bf3f2aa00c94704b18249249fd0c15,
+        type: 3}
     - target: {fileID: 5755905570421891251, guid: 01b6b8d87c68d194d89d57168e8dda3d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2657,6 +2669,18 @@ PrefabInstance:
       propertyPath: ACspecial
       value: 
       objectReference: {fileID: 1698349701}
+    - target: {fileID: 3157422684163953900, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
+    - target: {fileID: 3157422684163953900, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
+        type: 3}
+      propertyPath: ParticleItem
+      value: 
+      objectReference: {fileID: 1468240467221576396, guid: 61bf3f2aa00c94704b18249249fd0c15,
+        type: 3}
     - target: {fileID: 3346281884744330051, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5754,6 +5778,18 @@ PrefabInstance:
       propertyPath: ACspecial
       value: 
       objectReference: {fileID: 1698349701}
+    - target: {fileID: 3157422684163953900, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
+    - target: {fileID: 3157422684163953900, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
+        type: 3}
+      propertyPath: ParticleItem
+      value: 
+      objectReference: {fileID: 1468240467221576396, guid: 61bf3f2aa00c94704b18249249fd0c15,
+        type: 3}
     - target: {fileID: 3346281884744330051, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6917,6 +6953,18 @@ PrefabInstance:
       propertyPath: ACspecial
       value: 
       objectReference: {fileID: 1698349701}
+    - target: {fileID: 3157422684163953900, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
+    - target: {fileID: 3157422684163953900, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
+        type: 3}
+      propertyPath: ParticleItem
+      value: 
+      objectReference: {fileID: 1468240467221576396, guid: 61bf3f2aa00c94704b18249249fd0c15,
+        type: 3}
     - target: {fileID: 3346281884744330051, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
         type: 3}
       propertyPath: m_LocalPosition.x

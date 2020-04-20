@@ -167,6 +167,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &21634318
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -273,6 +276,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &52598606
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -379,6 +385,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &98254991
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -485,6 +494,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &118172632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -552,6 +564,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3157422684163953900, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
+        type: 3}
+      propertyPath: ACspecial
+      value: 
+      objectReference: {fileID: 2120284410}
+    - target: {fileID: 3157422684163953900, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
     - target: {fileID: 3346281884744330051, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -660,6 +683,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &205717524
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -766,6 +792,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 320491f87c5b9a24f916b5392c100f76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GroundParticle: {fileID: 3373402467041681278, guid: 66e85e244a89943f9a9aee58a0df186d,
+    type: 3}
 --- !u!65 &233469750
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -833,6 +861,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4474046942351068782, guid: 01b6b8d87c68d194d89d57168e8dda3d,
+        type: 3}
+      propertyPath: ACspecial
+      value: 
+      objectReference: {fileID: 2120284410}
+    - target: {fileID: 4474046942351068782, guid: 01b6b8d87c68d194d89d57168e8dda3d,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
     - target: {fileID: 5755905570421891251, guid: 01b6b8d87c68d194d89d57168e8dda3d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -941,6 +980,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &275463837
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1047,6 +1089,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &286943991
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1153,6 +1198,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &330508269
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1259,6 +1307,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &335636670
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1365,6 +1416,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &351802010
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1554,6 +1608,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &510748506
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1660,6 +1717,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &517491852
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1727,6 +1787,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3157422684163953900, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
+        type: 3}
+      propertyPath: ACspecial
+      value: 
+      objectReference: {fileID: 2120284410}
+    - target: {fileID: 3157422684163953900, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
     - target: {fileID: 3346281884744330051, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1835,6 +1906,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &625189320
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1902,6 +1976,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4474046942351068782, guid: 01b6b8d87c68d194d89d57168e8dda3d,
+        type: 3}
+      propertyPath: ACspecial
+      value: 
+      objectReference: {fileID: 2120284410}
+    - target: {fileID: 4474046942351068782, guid: 01b6b8d87c68d194d89d57168e8dda3d,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
     - target: {fileID: 5755905570421891251, guid: 01b6b8d87c68d194d89d57168e8dda3d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2056,6 +2141,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3157422684163953900, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
+        type: 3}
+      propertyPath: ACspecial
+      value: 
+      objectReference: {fileID: 2120284410}
+    - target: {fileID: 3157422684163953900, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
     - target: {fileID: 3346281884744330051, guid: 8abafa7d51835454e9ac1cdcd7a5a77b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2164,6 +2260,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &926727012
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2347,6 +2446,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &934647462
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2453,6 +2555,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &963368112
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2610,6 +2715,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &987813414
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2825,6 +2933,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &1126384239
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2931,6 +3042,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &1150940365
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3043,6 +3157,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &1180557013
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3149,6 +3266,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &1231494582
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3347,6 +3467,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &1324342928
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3680,6 +3803,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &1365831107
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3786,6 +3912,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &1422039876
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3892,6 +4021,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &1430135005
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4136,6 +4268,17 @@ PrefabInstance:
       propertyPath: current_type
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: -3535486647033681261, guid: c99ba3f0b90f4ca47b04df3a28291db7,
+        type: 3}
+      propertyPath: ACspecial
+      value: 
+      objectReference: {fileID: 2120284410}
+    - target: {fileID: -3535486647033681261, guid: c99ba3f0b90f4ca47b04df3a28291db7,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
     - target: {fileID: 5818875713175245648, guid: c99ba3f0b90f4ca47b04df3a28291db7,
         type: 3}
       propertyPath: m_Name
@@ -4244,6 +4387,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &1473495975
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4350,6 +4496,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &1513377139
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4410,6 +4559,133 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513377136}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1556082575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1556082577}
+  - component: {fileID: 1556082576}
+  m_Layer: 0
+  m_Name: AC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1556082576
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556082575}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f2d3200a1839d5f49b767bc42b980a8f, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1556082577
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556082575}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.97, y: -2.299183, z: -9.736206}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1557453726
 GameObject:
   m_ObjectHideFlags: 0
@@ -4456,6 +4732,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &1557453729
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4562,6 +4841,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &1562503413
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4668,6 +4950,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &1620785437
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4846,6 +5131,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &1638871753
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4989,6 +5277,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &1651938472
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5116,6 +5407,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: boom (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1744134845467200474, guid: 2150a389866901346a92be55c552a6ea,
+        type: 3}
+      propertyPath: ACspecial
+      value: 
+      objectReference: {fileID: 2120284410}
+    - target: {fileID: 1744134845467200474, guid: 2150a389866901346a92be55c552a6ea,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2150a389866901346a92be55c552a6ea, type: 3}
 --- !u!1 &1717164732
@@ -5334,6 +5636,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &1736519245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5533,6 +5838,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &1788418056
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5717,6 +6025,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &1860873638
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5784,6 +6095,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3535486647033681261, guid: c99ba3f0b90f4ca47b04df3a28291db7,
+        type: 3}
+      propertyPath: ACspecial
+      value: 
+      objectReference: {fileID: 2120284410}
+    - target: {fileID: -3535486647033681261, guid: c99ba3f0b90f4ca47b04df3a28291db7,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
     - target: {fileID: 5818875713175245648, guid: c99ba3f0b90f4ca47b04df3a28291db7,
         type: 3}
       propertyPath: m_Name
@@ -5892,6 +6214,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &1911836633
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5998,6 +6323,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &1980130860
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6104,6 +6432,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &2014042124
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6210,6 +6541,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &2027614233
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6316,6 +6650,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc452b55f3f7b64499450a71f2d4847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ParticleBrick: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+    type: 3}
+  AC: {fileID: 2120284410}
 --- !u!65 &2032586493
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6376,6 +6713,133 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2032586490}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2120284409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2120284411}
+  - component: {fileID: 2120284410}
+  m_Layer: 0
+  m_Name: ACspecial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &2120284410
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120284409}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 57dd002a1252c3d41bb9af9eb32d003b, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &2120284411
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120284409}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.97, y: -2.299183, z: -9.736206}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1603622929120899492
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6443,6 +6907,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: boom
       objectReference: {fileID: 0}
+    - target: {fileID: 1744134845467200474, guid: 2150a389866901346a92be55c552a6ea,
+        type: 3}
+      propertyPath: ACspecial
+      value: 
+      objectReference: {fileID: 2120284410}
+    - target: {fileID: 1744134845467200474, guid: 2150a389866901346a92be55c552a6ea,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2150a389866901346a92be55c552a6ea, type: 3}
 --- !u!1001 &3620522340367784526
@@ -6586,6 +7061,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: extend
       objectReference: {fileID: 0}
+    - target: {fileID: 8853671149574590588, guid: 91e492b2b17ec784f86da038d3b9f01d,
+        type: 3}
+      propertyPath: ACspecial
+      value: 
+      objectReference: {fileID: 2120284410}
+    - target: {fileID: 8853671149574590588, guid: 91e492b2b17ec784f86da038d3b9f01d,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91e492b2b17ec784f86da038d3b9f01d, type: 3}
 --- !u!1001 &9218238622203521637
@@ -6655,5 +7141,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: breakable_move_brick
       objectReference: {fileID: 0}
+    - target: {fileID: 9218238622891565899, guid: 0b265f2fd144647538c8bfc5b8a4eede,
+        type: 3}
+      propertyPath: AC
+      value: 
+      objectReference: {fileID: 2120284410}
+    - target: {fileID: 9218238622891565899, guid: 0b265f2fd144647538c8bfc5b8a4eede,
+        type: 3}
+      propertyPath: ParticleBrick
+      value: 
+      objectReference: {fileID: 263594032908141254, guid: 36fca70186f844d6aad0e2df55a58973,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b265f2fd144647538c8bfc5b8a4eede, type: 3}
