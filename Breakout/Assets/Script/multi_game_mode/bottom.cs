@@ -22,6 +22,7 @@ public class bottom : MonoBehaviour
         if (collision.transform.tag == "Ball1") {
             if (multi_game_manage_player1.instance.IsLastBall())
             {
+                Instantiate(GroundParticle, gameObject.transform.position, Quaternion.identity);
                 multi_game_manage_player1.instance.is_magnetic = false;
                 multi_game_manage_player1.instance.GameOver();
             }

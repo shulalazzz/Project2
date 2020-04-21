@@ -16,18 +16,39 @@ public class paddle2_moving : MonoBehaviour
         
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(Vector3.left * speed * Time.deltaTime);
-            Vector3 pos = transform.position;
-            pos.x = Mathf.Clamp(pos.x, x_min, x_max);
-            transform.position = pos;
-
+            if (!multi_game_manage_player2.instance.is_extend) {
+                transform.Translate(Vector3.left * speed * Time.deltaTime);
+                Vector3 pos = transform.position;
+                pos.x = Mathf.Clamp(pos.x, x_min, x_max);
+                transform.position = pos;
+            }
+            else {
+                transform.Translate(Vector3.left * speed * Time.deltaTime);
+                Vector3 pos = transform.position;
+                x_min = x_min + 1f;
+                x_max = x_max - 1f;
+                pos.x = Mathf.Clamp(pos.x, x_min, x_max);
+                transform.position = pos;
+                multi_game_manage_player2.instance.is_extend = false;
+            }
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(Vector3.right * speed * Time.deltaTime);
-            Vector3 pos = transform.position;
-            pos.x = Mathf.Clamp(pos.x, x_min, x_max);
-            transform.position = pos;
+            if (!multi_game_manage_player2.instance.is_extend) {
+                transform.Translate(Vector3.right * speed * Time.deltaTime);
+                Vector3 pos = transform.position;
+                pos.x = Mathf.Clamp(pos.x, x_min, x_max);
+                transform.position = pos;
+            }
+            else {
+                transform.Translate(Vector3.right * speed * Time.deltaTime);
+                Vector3 pos = transform.position;
+                x_min = x_min + 1f;
+                x_max = x_max - 1f;
+                pos.x = Mathf.Clamp(pos.x, x_min, x_max);
+                transform.position = pos;
+                multi_game_manage_player2.instance.is_extend = false;
+            }
         }
     }
 

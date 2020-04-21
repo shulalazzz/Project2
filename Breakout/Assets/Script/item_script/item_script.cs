@@ -10,7 +10,7 @@ public class item_script : MonoBehaviour
     public float explosion_radius;
     public GameObject ParticleBrick;
     public AudioSource ACspecial;
-   public enum item_type
+    public enum item_type
     {
         life_item,
         multiballs_item,
@@ -52,7 +52,7 @@ public class item_script : MonoBehaviour
             Collider[] destory_obj = Physics.OverlapSphere(transform.position, explosion_radius);
             foreach(Collider obj in destory_obj)
             {
-                if(!obj.CompareTag("Player"))
+                if(obj.CompareTag("brick"))
                 {
                     Instantiate(ParticleBrick, gameObject.transform.position, Quaternion.identity);
                     Destroy(obj.gameObject);

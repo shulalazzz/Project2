@@ -17,6 +17,7 @@ public class multi_game_manage_player1 : MonoBehaviour
     public int score;
     public bool lose = false;
     public bool is_magnetic = false;
+    public bool is_extend = false;
     public int rest_break;
 
     private void Awake()
