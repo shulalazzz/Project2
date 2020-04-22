@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/multi_mode.unity
     guid: 6c62562635c72b74da5d1529f9a0e405
+  - enabled: 1
+    path: Assets/Scenes/level1.unity
+    guid: ed325e130631644dd9bc6a2ba7aaf6a0
+  - enabled: 1
+    path: Assets/Scenes/level2.unity
+    guid: 2669f2a7af97940b5af0fcc39ba49f27
   m_configObjects: {}

@@ -74,7 +74,11 @@ public class game_manage : MonoBehaviour
             SceneManager.LoadScene ("menu");
         }
         if (Input.GetKeyDown (KeyCode.R)) {
-            SceneManager.LoadScene ("single_mode");
+            SceneManager.LoadScene (SceneManager.GetActiveScene().name);
+        }
+        if(is_passed && Input.GetKeyDown(KeyCode.N))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
    public void PlaySingle()
     {
-        SceneManager.LoadScene("single_mode");
+        SceneManager.LoadScene("level1");
     }
     public void PlayMulti()
     {

@@ -4440,7 +4440,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: You win!
+  m_Text: 'You win!
+
+    Next level press N'
 --- !u!222 &1119225248
 CanvasRenderer:
   m_ObjectHideFlags: 0
