@@ -1,0 +1,13 @@
+Tech: unity
+
+transform 
+https://docs.unity3d.com/Manual/class-Transform.html
+
+vector3
+https://docs.unity3d.com/ScriptReference/Vector3.html
+
+SceneManager
+https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.html
+
+OverlapSphere
+https://docs.unity3d.com/ScriptReference/Physics.OverlapSphere.html
