@@ -78,7 +78,14 @@ public class game_manage : MonoBehaviour
         }
         if(is_passed && Input.GetKeyDown(KeyCode.N))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            if (SceneManager.GetActiveScene().buildIndex!=4)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+            else
+            {
+                SceneManager.LoadScene("menu");
+            }
         }
     }
 }
