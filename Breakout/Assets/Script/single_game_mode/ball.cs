@@ -11,6 +11,7 @@ public class ball : MonoBehaviour
     public bool apply_magnetic;
     public Transform paddle;
     private bool hacking = false;
+    private bool cheat = true;
     void Awake()
     {
         rb_ball = GetComponent<Rigidbody>();
@@ -29,51 +30,102 @@ public class ball : MonoBehaviour
             transform.position = pos;
             return;
         }
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
+        if (MainMenu.instance.is_test) {
+            if (cheat)
+            {
+                if (hacking)
+                {
+                    hacking = false;
+                    Vector3 speed_normalized = new Vector3(1f, 1f, 0).normalized;
+                    rb_ball.velocity = speed_normalized * speed;
+                }
+                else
+                {
+                    hacking = true;
+                    Vector3 hack_normalized = new Vector3(1f, 1f, 0).normalized;
+                    rb_ball.velocity = hack_normalized * 60;
+                }
+                cheat = false;
+            }
             if (hacking)
             {
-                hacking = false;
-                Vector3 speed_normalized = new Vector3(1f, 1f, 0).normalized;
-                rb_ball.velocity = speed_normalized * speed;
+                Vector3 pos = transform.position;
+                pos.x = paddle.transform.position.x;
+                transform.position = pos;
             }
-            else
+            if ((Input.GetMouseButtonDown(0)&&!game_manage.instance.isPlaying) || (Input.GetMouseButtonDown(0) && apply_magnetic))
             {
-                hacking = true;
-                Vector3 hack_normalized = new Vector3(1f, 1f, 0).normalized;
-                rb_ball.velocity = hack_normalized * 60;
+                game_manage.instance.isPlaying = true;
+                game_manage.instance.start_panel.SetActive(false);
+                apply_magnetic = false;
+                StartMove();
+            }
+            //not start, ball follow paddle
+            if (game_manage.instance.isPlaying == false && !game_manage.instance.is_passed)
+            {
+                game_manage.instance.start_panel.SetActive(true);
+                radius = gameObject.GetComponent<SphereCollider>().radius;
+                Vector3 pos = transform.position;
+                pos.x = paddle.transform.position.x;
+                pos.y = paddle.transform.position.y + radius;
+                transform.position = pos;
+            }
+            if (apply_magnetic)
+            {
+                radius = gameObject.GetComponent<SphereCollider>().radius;
+                Vector3 pos = transform.position;
+                pos.x = paddle.transform.position.x;
+                pos.y = paddle.transform.position.y + radius;
+                transform.position = pos;
             }
         }
-        if (hacking)
-        {
-            Vector3 pos = transform.position;
-            pos.x = paddle.transform.position.x;
-            transform.position = pos;
-        }
-        if ((Input.GetMouseButtonDown(0)&&!game_manage.instance.isPlaying) || (Input.GetMouseButtonDown(0) && apply_magnetic))
-        {
-            game_manage.instance.isPlaying = true;
-            game_manage.instance.start_panel.SetActive(false);
-            apply_magnetic = false;
-            StartMove();
-        }
-        //not start, ball follow paddle
-        if (game_manage.instance.isPlaying == false && !game_manage.instance.is_passed)
-        {
-            game_manage.instance.start_panel.SetActive(true);
-            radius = gameObject.GetComponent<SphereCollider>().radius;
-            Vector3 pos = transform.position;
-            pos.x = paddle.transform.position.x;
-            pos.y = paddle.transform.position.y + radius;
-            transform.position = pos;
-        }
-        if (apply_magnetic)
-        {
-            radius = gameObject.GetComponent<SphereCollider>().radius;
-            Vector3 pos = transform.position;
-            pos.x = paddle.transform.position.x;
-            pos.y = paddle.transform.position.y + radius;
-            transform.position = pos;
+        else {
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                if (hacking)
+                {
+                    hacking = false;
+                    Vector3 speed_normalized = new Vector3(1f, 1f, 0).normalized;
+                    rb_ball.velocity = speed_normalized * speed;
+                }
+                else
+                {
+                    hacking = true;
+                    Vector3 hack_normalized = new Vector3(1f, 1f, 0).normalized;
+                    rb_ball.velocity = hack_normalized * 60;
+                }
+            }
+            if (hacking)
+            {
+                Vector3 pos = transform.position;
+                pos.x = paddle.transform.position.x;
+                transform.position = pos;
+            }
+            if ((Input.GetMouseButtonDown(0)&&!game_manage.instance.isPlaying) || (Input.GetMouseButtonDown(0) && apply_magnetic))
+            {
+                game_manage.instance.isPlaying = true;
+                game_manage.instance.start_panel.SetActive(false);
+                apply_magnetic = false;
+                StartMove();
+            }
+            //not start, ball follow paddle
+            if (game_manage.instance.isPlaying == false && !game_manage.instance.is_passed)
+            {
+                game_manage.instance.start_panel.SetActive(true);
+                radius = gameObject.GetComponent<SphereCollider>().radius;
+                Vector3 pos = transform.position;
+                pos.x = paddle.transform.position.x;
+                pos.y = paddle.transform.position.y + radius;
+                transform.position = pos;
+            }
+            if (apply_magnetic)
+            {
+                radius = gameObject.GetComponent<SphereCollider>().radius;
+                Vector3 pos = transform.position;
+                pos.x = paddle.transform.position.x;
+                pos.y = paddle.transform.position.y + radius;
+                transform.position = pos;
+            }
         }
     }
     private void OnCollisionExit(Collision collision)
