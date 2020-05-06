@@ -70,9 +70,7 @@ public class multi_game_manage_player2 : MonoBehaviour
     {
         break_brick_player2[] all_break = GameObject.FindObjectsOfType<break_brick_player2>();
         rest_break = all_break.Length;
-        if (MainMenu.instance.is_test) {
-            Debug.Log("player2 brick number is " + all_break.Length);
-        }
+        Debug.Log("player2 brick number is " + all_break.Length);
         if (all_break.Length == 1)
         {
             is_passed = true;

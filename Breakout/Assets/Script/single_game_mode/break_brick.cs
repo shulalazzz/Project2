@@ -24,9 +24,7 @@ public class break_brick : MonoBehaviour
         this.enabled = false;
         AC.Play();
         game_manage.instance.CheckWin();
-        if (MainMenu.instance.is_test) {
-            Debug.Log("Destroying " + gameObject.name);
-        }
+        Debug.Log("Destroying " + gameObject.name);
         Instantiate(ParticleBrick, gameObject.transform.position, Quaternion.identity);
         Destroy(gameObject);
     }

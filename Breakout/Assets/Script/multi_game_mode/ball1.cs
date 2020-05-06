@@ -11,7 +11,6 @@ public class ball1 : MonoBehaviour
     public bool apply_magnetic;
     public Transform paddle1;
     private bool hacking = false;
-    private bool cheat = true;
 
     void Awake()
     {
@@ -30,100 +29,53 @@ public class ball1 : MonoBehaviour
             transform.position = pos;
             return;
         }
-        if (MainMenu.instance.is_test)
+
+        if (Input.GetKeyDown(KeyCode.Z))
         {
-            if (cheat)
-            {
-                if (hacking)
-                {
-                    hacking = false;
-                    Vector3 speed_normalized = new Vector3(1f, 1f, 0).normalized;
-                    rb_ball1.velocity = speed_normalized * speed;
-                }
-                else
-                {
-                    hacking = true;
-                    Vector3 hack_normalized = new Vector3(1f, 1f, 0).normalized;
-                    rb_ball1.velocity = hack_normalized * 60;
-                }
-                cheat = false;
-            }
             if (hacking)
             {
-                Vector3 pos = transform.position;
-                pos.x = paddle1.transform.position.x;
-                transform.position = pos;
+                hacking = false;
+                Vector3 speed_normalized = new Vector3(1f, 1f, 0).normalized;
+                rb_ball1.velocity = speed_normalized * speed;
             }
-            if ((Input.GetMouseButtonDown(0) && !multi_game_manage_player1.instance.isPlaying) || (Input.GetMouseButtonDown(0) && apply_magnetic))
+            else
             {
-                multi_game_manage_player1.instance.isPlaying = true;
-                multi_game_manage_player1.instance.start_panel.SetActive(false);
-                apply_magnetic = false;
-                StartMove();
-            }
-            if (!multi_game_manage_player1.instance.isPlaying && !multi_game_manage_player1.instance.is_passed)
-            {
-                radius = gameObject.GetComponent<SphereCollider>().radius;
-                Vector3 pos = transform.position;
-                pos.x = paddle1.transform.position.x;
-                pos.y = paddle1.transform.position.y + radius;
-                transform.position = pos;
-            }
-            if (apply_magnetic)
-            {
-                radius = gameObject.GetComponent<SphereCollider>().radius;
-                Vector3 pos = transform.position;
-                pos.x = paddle1.transform.position.x;
-                pos.y = paddle1.transform.position.y + radius;
-                transform.position = pos;
+                hacking = true;
+                Vector3 hack_normalized = new Vector3(1f, 1f, 0).normalized;
+                rb_ball1.velocity = hack_normalized * 60;
             }
         }
-        else
+        if (hacking)
         {
-            if (Input.GetKeyDown(KeyCode.Z))
-            {
-                if (hacking)
-                {
-                    hacking = false;
-                    Vector3 speed_normalized = new Vector3(1f, 1f, 0).normalized;
-                    rb_ball1.velocity = speed_normalized * speed;
-                }
-                else
-                {
-                    hacking = true;
-                    Vector3 hack_normalized = new Vector3(1f, 1f, 0).normalized;
-                    rb_ball1.velocity = hack_normalized * 60;
-                }
-            }
-            if (hacking)
-            {
-                Vector3 pos = transform.position;
-                pos.x = paddle1.transform.position.x;
-                transform.position = pos;
-            }
-            if ((Input.GetMouseButtonDown(0) && !multi_game_manage_player1.instance.isPlaying) || (Input.GetMouseButtonDown(0) && apply_magnetic))
-            {
-                multi_game_manage_player1.instance.isPlaying = true;
-                multi_game_manage_player1.instance.start_panel.SetActive(false);
-                apply_magnetic = false;
-                StartMove();
-            }
-            if (!multi_game_manage_player1.instance.isPlaying && !multi_game_manage_player1.instance.is_passed)
-            {
-                radius = gameObject.GetComponent<SphereCollider>().radius;
-                Vector3 pos = transform.position;
-                pos.x = paddle1.transform.position.x;
-                pos.y = paddle1.transform.position.y + radius;
-                transform.position = pos;
-            }
-            if (apply_magnetic)
-            {
-                radius = gameObject.GetComponent<SphereCollider>().radius;
-                Vector3 pos = transform.position;
-                pos.x = paddle1.transform.position.x;
-                pos.y = paddle1.transform.position.y + radius;
-                transform.position = pos;
-            }
+            Vector3 pos = transform.position;
+            pos.x = paddle1.transform.position.x;
+            transform.position = pos;
+        }
+
+        if ((Input.GetMouseButtonDown(0) && !multi_game_manage_player1.instance.isPlaying) || (Input.GetMouseButtonDown(0) && apply_magnetic))
+        {
+            multi_game_manage_player1.instance.isPlaying = true;
+            multi_game_manage_player1.instance.start_panel.SetActive(false);
+            apply_magnetic = false;
+            StartMove();
+        }
+
+        if (!multi_game_manage_player1.instance.isPlaying && !multi_game_manage_player1.instance.is_passed)
+        {
+            radius = gameObject.GetComponent<SphereCollider>().radius;
+            Vector3 pos = transform.position;
+            pos.x = paddle1.transform.position.x;
+            pos.y = paddle1.transform.position.y + radius;
+            transform.position = pos;
+        }
+
+        if (apply_magnetic)
+        {
+            radius = gameObject.GetComponent<SphereCollider>().radius;
+            Vector3 pos = transform.position;
+            pos.x = paddle1.transform.position.x;
+            pos.y = paddle1.transform.position.y + radius;
+            transform.position = pos;
         }
     }
 
@@ -151,9 +103,7 @@ public class ball1 : MonoBehaviour
     {
         int angle = RandomAngle();
         Vector3 speed_normalized = new Vector3(1f, Mathf.Tan(angle * Mathf.Deg2Rad), 0).normalized;
-        if (MainMenu.instance.is_test) {
-            Debug.Log("release ball1");
-        }
+        Debug.Log("release ball1");
         rb_ball1.velocity = speed_normalized * speed;
     }
 }

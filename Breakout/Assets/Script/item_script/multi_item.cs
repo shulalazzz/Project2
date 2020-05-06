@@ -24,9 +24,7 @@ public class multi_item : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         ACspecial.Play();
-        if (MainMenu.instance.is_test) {
-            Debug.Log("Item activated " + transform.name);
-        }
+        Debug.Log("Item activated " + transform.name);
 
         if (collision.transform.tag == "Ball1") {
             if(current_type == item_type.life_item)
