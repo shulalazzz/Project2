@@ -1,13 +1,17 @@
 Tech: unity
 
 transform 
+Vector3 pos = transform.position;
 https://docs.unity3d.com/Manual/class-Transform.html
 
 vector3
+Vector3 pos = transform.position;
 https://docs.unity3d.com/ScriptReference/Vector3.html
 
 SceneManager
+SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.html
 
 OverlapSphere
+Collider[] destory_obj = Physics.OverlapSphere(transform.position, explosion_radius);
 https://docs.unity3d.com/ScriptReference/Physics.OverlapSphere.html
