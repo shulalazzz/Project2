@@ -21,8 +21,11 @@ public class item_script : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-      ACspecial.Play();
-        Debug.Log("Item activated "+ transform.name);
+        ACspecial.Play();
+        if (MainMenu.instance.is_test)
+        {
+            Debug.Log("Item activated "+ transform.name);
+        }
         if(current_type == item_type.life_item)
         {
             game_manage.instance.ChangeLife(1);
