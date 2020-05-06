@@ -5,7 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-   public void PlaySingle()
+    public static MainMenu instance;
+    public bool is_test = false;
+
+    public void PlaySingle()
     {
         SceneManager.LoadScene("level1");
     }
@@ -17,5 +20,20 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log("quit");
         Application.Quit();
+    }
+    public void Test()
+    {
+        Debug.Log("test");
+        is_test = true;
+    }
+    public void Original()
+    {
+        Debug.Log("original");
+        is_test = false;
+    }
+
+    private void Awake()
+    {
+        instance = this;
     }
 }

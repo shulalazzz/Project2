@@ -103,7 +103,9 @@ public class ball2 : MonoBehaviour
     {
         int angle = RandomAngle();
         Vector3 speed_normalized = new Vector3(-1f, Mathf.Tan(angle * Mathf.Deg2Rad), 0).normalized;
-        Debug.Log("release ball1");
+        if (MainMenu.instance.is_test) {
+            Debug.Log("release ball2");
+        }
         rb_ball2.velocity = speed_normalized * speed;
     }
 }
